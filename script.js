@@ -70,9 +70,9 @@ function showTipo(){
 
 
 function hiddenTipo(){
-    var hidden_resultado_xp = document.querySelector('.show');
-     hidden_resultado_xp.classList.remove("show");
-     hidden_resultado_xp.classList.add("remove");   
+    var hidden_resultado_tipo = document.querySelector('.show');
+     hidden_resultado_tipo.classList.remove("show");
+     hidden_resultado_tipo.classList.add("remove");   
 }
 
 function showResultado(){	
