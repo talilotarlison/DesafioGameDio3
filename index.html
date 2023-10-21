@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jogo Ataque</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1>Jogo Ataque!!</h1>
+      <form id="some-form">
+      <div class="dados_nome box">
+        <p>Qual seu Nome?</p>
+        <input type="text" id="nome" minlength="1" maxlength="50" placeholder="Nome do Heroi!"></input>
+        <button onclick="showIdade()">Avançar</button>
+      </div>
+   
+      <div class="dados_idade box">
+          <p>Qual sua Idade?</p>
+          <div>
+             <input type="number" id="idade" placeholder=" Idade do heroi." required></input>
+          </div>
+          <button onclick="showTipo()">Avançar</button>
+      </div>
+      
+      <div class="dados_tipo box">
+        <p>Qual Seu Numero de Vitorias e Derrotas?</p>
+        <div>
+              <input type="radio" id="guerreiro" name="tipo" value="Guerreiro" />
+              <label for="guerreiro">Guerreiro</label>
+          </div>
+          <div>
+             <input type="radio" id="mago" name="tipo" value="Mago"/>
+             <label for="mago">Mago</label>
+          </div>
+           <div>
+              <input type="radio" id="monge" name="tipo" value="Monge" />
+              <label for="monge">Monge</label>
+          </div>
+          <div>
+             <input type="radio" id="ninja " name="tipo" value="Ninja"/>
+             <label for="ninja ">Ninja</label>
+          </div>
+        <button onclick="showResultado()">Avançar</button>
+      </div>
+      </form>
+
+      <div class="dados_mostrar box">
+          <p>Resultado:</p>
+          <div id="mostra_resultado"></div>
+      </div>
+     
+      <script src="script.js"></script>
+  </body>
+</html>
